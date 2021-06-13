@@ -1,10 +1,10 @@
 package tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.R;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.cabinet.CabinetMainActivity;

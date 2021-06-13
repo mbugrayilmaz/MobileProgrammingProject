@@ -1,20 +1,18 @@
 package tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.event;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.view.View;
 
 import java.util.ArrayList;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.R;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Event;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.viewmodels.EventViewModel;
 
 public class EventViewWearablesActivity extends AppCompatActivity {

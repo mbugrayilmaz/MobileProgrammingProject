@@ -11,7 +11,6 @@ import androidx.core.util.Pair;
 
 import java.util.ArrayList;
 
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.cabinet.CabinetPickWearableActivity;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Drawer;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
 

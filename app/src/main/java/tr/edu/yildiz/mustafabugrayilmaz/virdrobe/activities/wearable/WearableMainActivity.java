@@ -1,5 +1,8 @@
 package tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.wearable;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.util.Pair;
@@ -7,13 +10,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.view.View;
-
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.R;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Drawer;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.tools.Tools;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.viewmodels.WearableViewModel;
 
 public class WearableMainActivity extends AppCompatActivity {

@@ -1,21 +1,17 @@
 package tr.edu.yildiz.mustafabugrayilmaz.virdrobe.tools;
 
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.RectF;
 import android.net.Uri;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.stream.Stream;
 
 public class Tools {
     public static Bitmap drawOutfit(Context context, String... uriList) {

@@ -7,8 +7,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.google.common.util.concurrent.ListenableFuture;
-
 import java.util.List;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;

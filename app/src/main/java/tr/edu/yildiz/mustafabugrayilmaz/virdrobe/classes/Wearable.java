@@ -12,7 +12,6 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 
 import static androidx.room.ForeignKey.CASCADE;

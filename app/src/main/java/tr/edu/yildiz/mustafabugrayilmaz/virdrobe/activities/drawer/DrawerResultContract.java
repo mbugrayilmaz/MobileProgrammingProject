@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Pair;
 
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.drawer.DrawerUpsertActivity;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Drawer;
 
 public class DrawerResultContract extends ActivityResultContract<Pair<String, Drawer>, Drawer> {

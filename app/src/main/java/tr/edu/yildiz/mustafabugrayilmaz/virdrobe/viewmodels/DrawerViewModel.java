@@ -7,7 +7,6 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Drawer;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.DrawerRepository;

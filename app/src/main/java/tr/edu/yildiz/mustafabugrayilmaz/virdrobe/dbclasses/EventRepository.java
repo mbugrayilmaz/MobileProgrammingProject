@@ -3,7 +3,6 @@ package tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses;
 import android.app.Application;
 
 import androidx.lifecycle.LiveData;
-import androidx.room.Query;
 
 import java.util.List;
 

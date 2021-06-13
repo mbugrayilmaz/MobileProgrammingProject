@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Pair;
 
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.wearable.WearableUpsertActivity;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
 
 public class WearableResultContract extends ActivityResultContract<Pair<String, Wearable>, Wearable> {

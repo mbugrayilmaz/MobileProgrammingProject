@@ -10,10 +10,9 @@ import java.util.List;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Event;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.AppDatabase;
+import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventRepository;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventWearableCrossRef;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventWithWearables;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventRepository;
 
 public class EventViewModel extends AndroidViewModel {
     private final EventRepository repository;

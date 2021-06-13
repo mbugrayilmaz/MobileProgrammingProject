@@ -7,11 +7,8 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Drawer;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.AppDatabase;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.WearableRepository;
 
 public class WearableViewModel extends AndroidViewModel {

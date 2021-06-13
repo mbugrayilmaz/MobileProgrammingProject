@@ -10,7 +10,6 @@ import java.util.List;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Outfit;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventRepository;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.OutfitRepository;
 
 public class OutfitViewModel extends AndroidViewModel {

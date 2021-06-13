@@ -9,7 +9,6 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 public class Event implements Parcelable {

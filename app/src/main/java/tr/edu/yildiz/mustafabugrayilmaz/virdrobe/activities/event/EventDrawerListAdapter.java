@@ -8,12 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultCaller;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.core.util.Pair;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStoreOwner;
@@ -24,8 +22,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.R;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.cabinet.CabinetDrawerListAdapter;
-import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.cabinet.CabinetWearableResultContract;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Drawer;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.viewmodels.DrawerViewModel;
 
