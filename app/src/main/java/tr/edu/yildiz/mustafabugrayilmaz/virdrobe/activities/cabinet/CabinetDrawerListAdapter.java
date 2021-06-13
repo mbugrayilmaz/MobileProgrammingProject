@@ -98,13 +98,16 @@ public class CabinetDrawerListAdapter extends ListAdapter<Drawer, CabinetDrawerL
 
         pickWearableActivityForResult = ((ActivityResultCaller) context).registerForActivityResult(new CabinetWearableResultContract(),
                 result -> {
-                    Intent resultIntent = new Intent();
+                    if (result != null) {
+                        Intent resultIntent = new Intent();
 
-                    resultIntent.putExtra("wearable", result);
+                        resultIntent.putExtra("wearable", result);
 
-                    ((Activity) context).setResult(Activity.RESULT_OK, resultIntent);
+                        ((Activity) context).setResult(Activity.RESULT_OK, resultIntent);
 
-                    ((Activity) context).finish();
+                        ((Activity) context).finish();
+                    }
                 });
+
     }
 }

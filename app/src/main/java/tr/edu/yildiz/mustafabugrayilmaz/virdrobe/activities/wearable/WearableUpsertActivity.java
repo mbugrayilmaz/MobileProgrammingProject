@@ -117,6 +117,8 @@ public class WearableUpsertActivity extends AppCompatActivity {
         wearable = getIntent().getParcelableExtra("wearable");
 
         if (upsertType.equals("insert")) {
+            setTitle("Add Wearable");
+
             isDefault = true;
 
             wearableUpsertButton.setText("ADD WEARABLE");
@@ -128,6 +130,8 @@ public class WearableUpsertActivity extends AppCompatActivity {
 
             selectedDate = LocalDate.now();
         } else if (upsertType.equals("update")) {
+            setTitle("Edit Wearable");
+
             isDefault = false;
 
             wearableUpsertButton.setText("SAVE CHANGES");

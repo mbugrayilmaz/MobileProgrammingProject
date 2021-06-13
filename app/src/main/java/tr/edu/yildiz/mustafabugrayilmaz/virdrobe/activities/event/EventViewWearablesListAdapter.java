@@ -16,6 +16,7 @@ import androidx.activity.result.ActivityResultCaller;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContract;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStoreOwner;
 import androidx.recyclerview.widget.DiffUtil;
@@ -129,8 +130,18 @@ public class EventViewWearablesListAdapter extends ListAdapter<Wearable, EventVi
         viewHolder.getPriceTextView().setText(String.valueOf(wearable.price));
 
         viewHolder.deleteButton.setOnClickListener(l -> {
-            eventViewModel.deleteEventWearable(event.id, wearable.id);
-            pickedList.remove(wearable.id);
+            new AlertDialog.Builder(context)
+                    .setTitle("Delete Wearable")
+                    .setMessage("Are you sure you want to delete this wearable from the event?")
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setPositiveButton(android.R.string.yes, (dialogInterface, i) -> {
+                        eventViewModel.deleteEventWearable(event.id, wearable.id);
+                        pickedList.remove(wearable.id);
+
+                        Toast.makeText(context, "Wearable deleted from event", Toast.LENGTH_SHORT).show();
+                    })
+                    .setNegativeButton(android.R.string.no, null)
+                    .show();
         });
     }
 

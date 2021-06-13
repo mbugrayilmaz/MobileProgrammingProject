@@ -34,7 +34,7 @@ public class EventPickWearableActivity extends AppCompatActivity {
 
         setTitle(drawer.name);
 
-        wearableRecyclerView = findViewById(R.id.cabinetWearableRecyclerView);
+        wearableRecyclerView = findViewById(R.id.eventWearableRecyclerView);
 
         wearableRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 

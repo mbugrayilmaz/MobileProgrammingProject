@@ -62,10 +62,14 @@ public class EventUpsertActivity extends AppCompatActivity {
                 ).show());
 
         if (upsertType.equals("insert")) {
+            setTitle("Add Event");
+
             eventUpsertButton.setText("ADD EVENT");
 
             selectedDate = LocalDate.now();
         } else {
+            setTitle("Edit " + event.name);
+
             selectedDate = event.eventDate;
 
             nameEditText.setText(event.name);

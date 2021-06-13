@@ -8,10 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultCaller;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.util.Pair;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStoreOwner;
@@ -74,8 +76,10 @@ public class EventDrawerListAdapter extends ListAdapter<Drawer, EventDrawerListA
         viewHolder.getNameTextView().setText(drawer.name);
 
         viewHolder.getLinearLayout().setOnClickListener(l -> {
-
+            pickWearableActivityForResult.launch(new Pair<>(drawer, pickedList));
         });
+
+
     }
 
     public static class EventDrawerDiff extends DiffUtil.ItemCallback<Drawer> {
@@ -100,13 +104,15 @@ public class EventDrawerListAdapter extends ListAdapter<Drawer, EventDrawerListA
 
         pickWearableActivityForResult = ((ActivityResultCaller) context).registerForActivityResult(new EventWearableResultContract(),
                 result -> {
-                    Intent resultIntent = new Intent();
+                    if (result != null) {
+                        Intent resultIntent = new Intent();
 
-                    resultIntent.putExtra("wearable", result);
+                        resultIntent.putExtra("wearable", result);
 
-                    ((Activity) context).setResult(Activity.RESULT_OK, resultIntent);
+                        ((Activity) context).setResult(Activity.RESULT_OK, resultIntent);
 
-                    ((Activity) context).finish();
+                        ((Activity) context).finish();
+                    }
                 });
     }
 }

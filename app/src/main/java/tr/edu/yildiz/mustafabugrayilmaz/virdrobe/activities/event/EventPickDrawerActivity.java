@@ -33,7 +33,7 @@ public class EventPickDrawerActivity extends AppCompatActivity {
 
         drawerRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        CabinetDrawerListAdapter adapter = new CabinetDrawerListAdapter(new CabinetDrawerListAdapter.CabinetDrawerDiff(), this, pickedList);
+        EventDrawerListAdapter adapter = new EventDrawerListAdapter(new EventDrawerListAdapter.EventDrawerDiff(), this, pickedList);
 
         drawerRecyclerView.setAdapter(adapter);
 

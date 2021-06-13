@@ -10,24 +10,33 @@
     tools:context=".activities.MainActivity">
 
     <Button
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/drawer"
         android:id="@+id/mainManageDrawersButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:onClick="manageDrawers"
+        android:drawableTint="@color/design_default_color_on_primary"
         android:text="DRAWERS" />
 
     <Button
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/cabinet"
         android:id="@+id/mainCabinetButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:onClick="onCabinet"
+        android:drawableTint="@color/design_default_color_on_primary"
         android:text="CABINET" />
 
     <Button
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/event"
         android:id="@+id/mainEventsButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:onClick="onEvents"
+        android:drawableTint="@color/design_default_color_on_primary"
         android:text="EVENTS" />
 
 </LinearLayout>

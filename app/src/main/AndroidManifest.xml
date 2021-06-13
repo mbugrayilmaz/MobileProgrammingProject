@@ -9,16 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Virdrobe">
-        <activity android:name=".activities.event.EventPickWearableActivity"></activity>
+        <activity android:name=".activities.event.EventPickWearableActivity" />
         <activity android:name=".activities.event.EventPickDrawerActivity" />
         <activity android:name=".activities.event.EventViewWearablesActivity" />
         <activity android:name=".activities.event.EventUpsertActivity" />
-        <activity android:name=".activities.cabinet.CabinetViewOutfitsActivity" />
+        <activity
+            android:name=".activities.cabinet.CabinetMainActivity"
+            android:label="Cabinet" />
         <activity android:name=".activities.cabinet.CabinetPickDrawerActivity" />
         <activity android:name=".activities.cabinet.CabinetPickWearableActivity" />
-        <activity android:name=".activities.cabinet.CabinetCreateOutfitActivity" />
-        <activity android:name=".activities.cabinet.CabinetMainActivity" />
-        <activity android:name=".activities.event.EventMainActivity" />
+        <activity
+            android:name=".activities.cabinet.CabinetCreateOutfitActivity"
+            android:label="Create Outfit" />
+        <activity
+            android:name=".activities.event.EventMainActivity"
+            android:label="Events" />
         <activity android:name=".activities.wearable.WearableMainActivity" />
         <activity android:name=".activities.wearable.WearableUpsertActivity" />
         <activity

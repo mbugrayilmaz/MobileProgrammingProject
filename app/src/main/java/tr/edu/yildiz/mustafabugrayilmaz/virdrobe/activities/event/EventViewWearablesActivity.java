@@ -38,6 +38,8 @@ public class EventViewWearablesActivity extends AppCompatActivity {
 
         event = getIntent().getParcelableExtra("event");
 
+        setTitle(event.name);
+
         eventViewModel = new ViewModelProvider(this).get(EventViewModel.class);
 
         wearableRecyclerView = findViewById(R.id.eventViewWearablesRecyclerView);
