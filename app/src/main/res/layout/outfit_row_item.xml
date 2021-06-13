@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/outfitRowItemLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/outfitRowItemHeadImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#0FFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/head_default" />
+
+            <ImageView
+                android:id="@+id/outfitRowItemFaceImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#0FFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/face_default" />
+
+            <ImageView
+                android:id="@+id/outfitRowItemUpperBodyImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#0FFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/upper_body_default" />
+
+            <ImageView
+                android:id="@+id/outfitRowItemLowerBodyImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#0FFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lower_body_default" />
+
+            <ImageView
+                android:id="@+id/outfitRowItemFeetImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#0FFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/feet_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/outfitRowItemLinearLayout"
+            android:layout_alignBottom="@id/outfitRowItemLinearLayout"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/outfitRowItemDeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:onClick="onShareOutfit"
+                app:elevation="10dp"
+                app:srcCompat="@drawable/delete"
+                app:tint="@color/design_default_color_on_primary" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/outfitRowItemShareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/outfitRowItemLinearLayout"
+                android:layout_alignBottom="@id/outfitRowItemLinearLayout"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:onClick="onShareOutfit"
+                app:elevation="10dp"
+                app:srcCompat="@drawable/share"
+                app:tint="@color/design_default_color_on_primary" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

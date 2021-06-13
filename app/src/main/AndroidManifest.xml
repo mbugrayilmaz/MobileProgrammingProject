@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.edu.yildiz.mustafabugrayilmaz.virdrobe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Virdrobe">
+        <activity android:name=".activities.cabinet.CabinetViewOutfitsActivity"/>
+        <activity android:name=".activities.cabinet.CabinetPickDrawerActivity" />
+        <activity android:name=".activities.cabinet.CabinetPickWearableActivity" />
+        <activity android:name=".activities.cabinet.CabinetCreateOutfitActivity" />
+        <activity android:name=".activities.cabinet.CabinetMainActivity" />
+        <activity android:name=".activities.event.EventMainActivity" />
+        <activity android:name=".activities.wearable.WearableMainActivity" />
+        <activity android:name=".activities.wearable.WearableUpsertActivity" />
+        <activity
+            android:name=".activities.drawer.DrawerUpsertActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.drawer.DrawerMainActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="tr.edu.yildiz.mustafabugrayilmaz.virdrobe.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

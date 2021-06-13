@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".activities.cabinet.CabinetCreateOutfitActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/cabinetCreateHeadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#0FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_default" />
+
+        <ImageButton
+            android:id="@+id/cabinetCreateFaceImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#0FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/face_default" />
+
+        <ImageButton
+            android:id="@+id/cabinetCreateUpperBodyImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#0FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/upper_body_default" />
+
+        <ImageButton
+            android:id="@+id/cabinetCreateLowerBodyImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#0FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lower_body_default" />
+
+        <ImageButton
+            android:id="@+id/cabinetCreateFeetImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#0FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feet_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSaveOutfit"
+                android:text="SAVE OUTFIT" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
