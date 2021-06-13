@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Entity
 public class Event implements Parcelable {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public long id;
 
     @ColumnInfo(name = "event_name")
@@ -59,7 +59,11 @@ public class Event implements Parcelable {
         parcel.writeLong(id);
         parcel.writeString(name);
         parcel.writeString(type);
-        parcel.writeLong(eventDate.toEpochDay());
+        if (eventDate == null) {
+            parcel.writeLong(0);
+        } else {
+            parcel.writeLong(eventDate.toEpochDay());
+        }
         parcel.writeString(location);
     }
 

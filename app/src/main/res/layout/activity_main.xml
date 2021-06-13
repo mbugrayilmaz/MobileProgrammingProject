@@ -4,22 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="50dp"
     tools:context=".activities.MainActivity">
 
-        <Button
-            android:id="@+id/mainManageDrawersButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="manageDrawers"
-            android:text="DRAWERS" />
+    <Button
+        android:id="@+id/mainManageDrawersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="manageDrawers"
+        android:text="DRAWERS" />
 
-        <Button
-            android:id="@+id/mainCabinetButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onCabinet"
-            android:text="CABINET"/>
+    <Button
+        android:id="@+id/mainCabinetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCabinet"
+        android:text="CABINET" />
+
+    <Button
+        android:id="@+id/mainEventsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onEvents"
+        android:text="EVENTS" />
 
 </LinearLayout>

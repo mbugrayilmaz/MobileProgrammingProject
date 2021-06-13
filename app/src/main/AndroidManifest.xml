@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Virdrobe">
-        <activity android:name=".activities.cabinet.CabinetViewOutfitsActivity"/>
+        <activity android:name=".activities.event.EventPickWearableActivity"></activity>
+        <activity android:name=".activities.event.EventPickDrawerActivity" />
+        <activity android:name=".activities.event.EventViewWearablesActivity" />
+        <activity android:name=".activities.event.EventUpsertActivity" />
+        <activity android:name=".activities.cabinet.CabinetViewOutfitsActivity" />
         <activity android:name=".activities.cabinet.CabinetPickDrawerActivity" />
         <activity android:name=".activities.cabinet.CabinetPickWearableActivity" />
         <activity android:name=".activities.cabinet.CabinetCreateOutfitActivity" />
@@ -34,7 +38,6 @@
             android:authorities="tr.edu.yildiz.mustafabugrayilmaz.virdrobe.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />

@@ -105,7 +105,7 @@ public class WearableUpsertActivity extends AppCompatActivity {
                 new DatePickerDialog(this,
                         (datePicker, year, month, dayOfMonth) -> {
                             datePicker.updateDate(year, month, dayOfMonth);
-                            setSelectedDate(year, month - 1, dayOfMonth);
+                            setSelectedDate(year, month, dayOfMonth);
                         },
                         Calendar.getInstance().get(Calendar.YEAR),
                         Calendar.getInstance().get(Calendar.MONTH),

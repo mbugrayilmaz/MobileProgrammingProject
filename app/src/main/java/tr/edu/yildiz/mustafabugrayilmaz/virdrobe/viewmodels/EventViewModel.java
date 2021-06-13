@@ -9,6 +9,9 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Event;
+import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.classes.Wearable;
+import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.AppDatabase;
+import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventWearableCrossRef;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventWithWearables;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.EventRepository;
 
@@ -26,6 +29,14 @@ public class EventViewModel extends AndroidViewModel {
         return repository.getById(id);
     }
 
+    public LiveData<EventWearableCrossRef> getEventWearableCrossRefByIds(long eventId, long wearableId) {
+        return repository.getEventWearableCrossRefByIds(eventId, wearableId);
+    }
+
+    public LiveData<List<EventWearableCrossRef>> getEventWearableCrossRefByEventId(long eventId) {
+        return repository.getEventWearableCrossRefByEventId(eventId);
+    }
+
     public LiveData<List<Event>> getAllEvents() {
         return allEvents;
     }
@@ -34,11 +45,27 @@ public class EventViewModel extends AndroidViewModel {
         return repository.getEventsWithWearables();
     }
 
-    public LiveData<List<EventWithWearables>> getEventWithWearablesById(long id) {
-        return repository.getEventWithWearablesById(id);
+    public LiveData<List<Wearable>> getWearablesByEventId(long id) {
+        return repository.getWearablesByEventId(id);
     }
 
-    public long insert(Event event) {
-        return repository.insert(event);
+    public void insert(Event event) {
+        repository.insert(event);
+    }
+
+    public void update(Event event) {
+        repository.update(event);
+    }
+
+    public void delete(Event event) {
+        repository.delete(event);
+    }
+
+    public void insertEventWearable(long eventId, long wearableId) {
+        repository.insertEventWearable(eventId, wearableId);
+    }
+
+    public void deleteEventWearable(long eventId, long wearableId) {
+        repository.deleteEventWearable(eventId, wearableId);
     }
 }

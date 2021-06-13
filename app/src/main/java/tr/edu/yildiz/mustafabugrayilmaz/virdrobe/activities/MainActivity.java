@@ -9,6 +9,7 @@ import android.view.View;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.R;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.cabinet.CabinetMainActivity;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.drawer.DrawerMainActivity;
+import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.activities.event.EventMainActivity;
 import tr.edu.yildiz.mustafabugrayilmaz.virdrobe.dbclasses.AppDatabase;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCabinet(View view) {
         Intent intent = new Intent(this, CabinetMainActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void onEvents(View view) {
+        Intent intent = new Intent(this, EventMainActivity.class);
 
         startActivity(intent);
     }
